@@ -4,6 +4,7 @@ public class Podcast {
     private String id;
     private String title;
     private String image;
+    private String resume;
     private String url;
     private String duration;
 
@@ -32,6 +33,14 @@ public class Podcast {
 
     public void setImage(String image) {
         this.image = image;
+    }
+
+    public String getResume() {
+        return resume;
+    }
+
+    public void setResume(String resume) {
+        this.resume = resume;
     }
 
     public String getUrl() {
