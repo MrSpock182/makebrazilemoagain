@@ -20,7 +20,7 @@ public class PodcastAPI {
     }
 
     @ResponseStatus(HttpStatus.OK)
-    @GetMapping("/find-all-podcast/{id}")
+    @GetMapping("/find-all-podcast")
     public Page<Podcast> findAllPodcast(@RequestParam(name = "page", defaultValue = "0") Integer page,
                                         @RequestParam(name = "size", defaultValue = "10") Integer size) {
         return service.findAll(page, size);
